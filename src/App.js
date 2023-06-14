@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Login from './components/Login';
+import Cadastro from './components/Cadastro';
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/cadastro" element={<h1 className="text-2xl font-bold m-4">Tela de Cadastro</h1>} />
+          <Route path="/cadastro" element={<Cadastro />} />
         </Routes>
       </div>
     </Router>
